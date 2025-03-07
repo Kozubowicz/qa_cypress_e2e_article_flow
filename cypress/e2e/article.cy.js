@@ -5,12 +5,6 @@ describe('Article create and remove', () => {
 
   beforeEach(() => {
     cy.task('generateUser').then((user) => {
-      // cy.visit('/user/register');
-
-      // cy.get(`input[type='text']`).type(user.username);
-      // cy.get(`input[type='email']`).type(user.email);
-      // cy.get(`input[type='password']`).type(user.password);
-
       cy.login(user.email, user.username, user.password);
     });
   });
